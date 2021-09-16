@@ -18,7 +18,6 @@ import string
 import json
 
 nltk.download('punkt')
-# %matplotlib inline
 
 # import StemmerFactory class
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
