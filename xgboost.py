@@ -80,7 +80,9 @@ from flask_ngrok import run_with_ngrok
 from flask import Flask,jsonify,request
 
 app = Flask(__name__)
-app.run()
+if name == 'main':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
 @app.route("/")
 def home():
     return "<h1>Running Flask on Google Colab!</h1>"
