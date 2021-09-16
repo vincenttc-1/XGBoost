@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask,jsonify,request
 
-app = Flask(__name__)
-
-@app.route("/")
-def home_view():
-		return "<h1>Welcome to Geeks for Geeks</h1>"
+app = Flask(name)
+CORS(app)
+@app.route('/')
+def index():
+    return "<h1>Skripsi-XGBoost-app !!</h1>"
