@@ -18,7 +18,6 @@ import string
 import json
 
 nltk.download('punkt')
-!pip install Sastrawi
 # %matplotlib inline
 
 # import StemmerFactory class
@@ -71,9 +70,6 @@ from sklearn.metrics import classification_report
 predict = xgb_model_loaded.predict(transform)
 predictions = [round(value) for value in predict]
 print(predict)
-
-!pip install flask-ngrok
-!pip install flask_cors
 
 from flask_cors import CORS
 from flask_ngrok import run_with_ngrok
