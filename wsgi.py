@@ -1,4 +1,4 @@
-from app.app import app
+from app.main import app
 
 if name == 'main':
     # Threaded option to enable multiple instances for multiple user access support
