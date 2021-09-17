@@ -17,7 +17,7 @@ Original file is located at
 #import string
 #import json
 
-nltk.download('punkt')
+#nltk.download('punkt')
 
 # import StemmerFactory class
 #from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
